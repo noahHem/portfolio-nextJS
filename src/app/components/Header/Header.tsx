@@ -8,6 +8,12 @@ const Header = () => {
 
     const [isSticky, setIsSticky] = useState(false);
 
+    const [menuOpen, setMenuOpen] = useState(false); // État pour gérer l'ouverture du menu
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen); // Inverser l'état de menuOpen
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -38,21 +44,27 @@ const Header = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    const handleMenuItemClick = () => {
+        setMenuOpen(false); // Fermer le modal lorsque l'on clique sur un élément du menu
+    };
+
     return (
         <header className={isSticky ? "sticky" : ""}>
             <a href="#home" className="logo">
                 Bienvenue !
             </a>
-            <ul className="nav">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skill">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-            </ul>
 
-            {isMobile && <div className="right-nav">
-                <div className="bx bx-menu" id="menu-icon"></div>
+            {isMobile && <div>
+                <div className="bx bx-menu" id="menu-icon" onClick={toggleMenu}></div>
             </div>}
+
+            <ul className={`nav ${menuOpen ? "open" : ""}`}>
+                <li onClick={handleMenuItemClick}><div className="bx bx-x" id="menu-icon" /></li>
+                <li><a href="#home" onClick={handleMenuItemClick}>Accueil</a></li>
+                <li><a href="#about" onClick={handleMenuItemClick}>À propos</a></li>
+                <li><a href="#skill" onClick={handleMenuItemClick}>Compétences</a></li>
+                <li><a href="#projects" onClick={handleMenuItemClick}>Projets</a></li>
+            </ul>
         </header>
     )
 }
