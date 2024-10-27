@@ -19,9 +19,9 @@ const HomeComponent = () => {
                     <i className="ri-arrow-right-up-line"></i>
                 </a>
             </div>
-            <div className="home-img">
-                <img src="/photoPortfolio.png" alt="photo" />
-            </div>
+            {/*<div className="home-img">*/}
+            {/*    <img src="/photoPortfolio.png" alt="photo" />*/}
+            {/*</div>*/}
         </section>
     )
 }
