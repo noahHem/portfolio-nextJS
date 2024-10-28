@@ -1,6 +1,7 @@
 "use client";
 import "../../globals.css"
 import {useEffect, useState} from "react";
+import 'boxicons/css/boxicons.min.css';
 
 const Header = () => {
 
@@ -55,11 +56,11 @@ const Header = () => {
             </a>
 
             {isMobile && <div>
-                <div className="bx bx-menu" id="menu-icon" onClick={toggleMenu}></div>
+                <i className="bx bx-menu" id="menu-icon" onClick={toggleMenu} />
             </div>}
 
             <ul className={`nav ${menuOpen ? "open" : ""}`}>
-                <li onClick={handleMenuItemClick}><div className="bx bx-x" id="menu-icon" /></li>
+                <li onClick={handleMenuItemClick}><i className="bx bx-x" id="menu-icon" /></li>
                 <li><a href="#home" onClick={handleMenuItemClick}>Accueil</a></li>
                 <li><a href="#about" onClick={handleMenuItemClick}>À propos</a></li>
                 <li><a href="#skill" onClick={handleMenuItemClick}>Compétences</a></li>

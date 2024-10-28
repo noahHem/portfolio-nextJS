@@ -1,4 +1,6 @@
 import "../../globals.css"
+import 'boxicons/css/boxicons.min.css';
+
 const HomeComponent = () => {
 
     return (
@@ -16,7 +18,7 @@ const HomeComponent = () => {
                 </ul>
                 <a href="/HEMERY_Noah_CV.pdf" className="btn" download="HEMERY_NOAH_CV">
                     Télécharger mon CV
-                    <i className="ri-arrow-right-up-line"></i>
+                    <i className='bx bx-right-top-arrow-circle'/>
                 </a>
             </div>
             {/*<div className="home-img">*/}

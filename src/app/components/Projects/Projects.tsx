@@ -1,4 +1,5 @@
 import "../../globals.css"
+import 'boxicons/css/boxicons.min.css';
 
 const Projects = () => {
 
@@ -14,7 +15,7 @@ const Projects = () => {
                     <p>Le célèbre jeu du Taquin développé en Java et JavaFX pour l'interface !</p>
                     <a href="https://github.com/noahHem/Taquin" className="s-btnn" target="_blank">
                         Voir plus
-                        <i className="ri-arrow-right-up-line"></i>
+                        <i className='bx bx-right-top-arrow-circle' />
                     </a>
                 </div>
 
@@ -24,7 +25,7 @@ const Projects = () => {
                     <p>Ce super portfolio développé en NextJS !</p>
                     <a href="https://github.com/noahHem/portfolio-nextJS" className="s-btnn" target="_blank">
                         Voir plus
-                        <i className="ri-arrow-right-up-line"></i>
+                        <i className='bx bx-right-top-arrow-circle'/>
                     </a>
                 </div>
 
@@ -34,7 +35,7 @@ const Projects = () => {
                     <p>Le célèbre jeu du Démineur en Java et JavaFX pour l'interface !</p>
                     <a href="https://github.com/noahHem/Demineur" className="s-btnn" target="_blank">
                         Voir plus
-                        <i className="ri-arrow-right-up-line"></i>
+                        <i className='bx bx-right-top-arrow-circle'/>
                     </a>
                 </div>
             </div>
