@@ -95,7 +95,7 @@ const Skills = () => {
                 <div className="skill-box">
                     <div className="skill-title">
                         <div className="img">
-                            <img src="/travail-en-equipe.png" alt="equipe" className="skill-icon" />
+                            <img src="/teamwork-svgrepo-com.svg" alt="equipe" className="skill-icon" />
                                 <h3>Travail d'équipe</h3>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ const Skills = () => {
                 <div className="skill-box">
                     <div className="skill-title">
                         <div className="img">
-                            <img src="/gestion-de-projet.png" alt="organisation" className="skill-icon" />
+                            <img src="/clipboard-tasks-svgrepo-com.svg" alt="organisation" className="skill-icon" />
                                 <h3>Organisation</h3>
                         </div>
                     </div>
@@ -113,7 +113,7 @@ const Skills = () => {
                 <div className="skill-box">
                     <div className="skill-title">
                         <div className="img">
-                            <img src="/sablier.png" alt="sablier" className="skill-icon" />
+                            <img src="/time-management-hourglass-svgrepo-com.svg" alt="sablier" className="skill-icon" />
                                 <h3>Gestion du temps</h3>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const Skills = () => {
                 <div className="skill-box">
                     <div className="skill-title">
                         <div className="img">
-                            <img src="/travail-autonome.png" alt="autonomie" className="skill-icon" />
+                            <img src="/work-is-money-svgrepo-com.svg" alt="autonomie" className="skill-icon" />
                                 <h3>Autonomie</h3>
                         </div>
                     </div>
@@ -131,7 +131,7 @@ const Skills = () => {
                 <div className="skill-box">
                     <div className="skill-title">
                         <div className="img">
-                            <img src="/eng.png" alt="anglais" className="skill-icon" />
+                            <img src="/flag-gb-svgrepo-com.svg" alt="anglais" className="skill-icon" />
                                 <h3>Anglais</h3>
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const Skills = () => {
                 <div className="skill-box">
                     <div className="skill-title">
                         <div className="img">
-                            <img src="/but.png" alt="persévérance" className="skill-icon" />
+                            <img src="/goal-mountain-svgrepo-com.svg" alt="persévérance" className="skill-icon" />
                                 <h3>Persévérance</h3>
                         </div>
                     </div>
