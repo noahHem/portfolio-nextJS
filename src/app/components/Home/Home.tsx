@@ -21,9 +21,6 @@ const HomeComponent = () => {
                     <i className='bx bx-right-top-arrow-circle'/>
                 </a>
             </div>
-            {/*<div className="home-img">*/}
-            {/*    <img src="/photoPortfolio.png" alt="photo" />*/}
-            {/*</div>*/}
         </section>
     )
 }
