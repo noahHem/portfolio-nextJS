@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css"
+import { inter } from './fonts/fonts';
+
 export const metadata: Metadata = {
   title: "Mon portfolio NextJS",
 };
@@ -17,10 +19,9 @@ export default function RootLayout({
       <link rel="stylesheet" type="text/css" href="./globals.css"/>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com"/>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet"/>
       <title>Mon portfolio NextJS</title>
     </head>
-    <body>
+    <body className={`${inter.className} antialiased`}>
     {children}
     </body>
     </html>
